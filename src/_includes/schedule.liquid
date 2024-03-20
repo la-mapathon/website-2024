@@ -1,0 +1,300 @@
+---
+layout: default
+---
+
+{% if page.lang == 'en' %}
+  {% assign source = en_content %}
+{% elsif page.lang == 'ja' %}
+  {% assign source = ja_content %}
+{% endif %}
+
+<div class="container">
+  <h1 class="display-3 my-5 text-center">{{ source.schedule.pageHeader }}
+  </h1>
+  <div class="my-2 text-center">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <img
+          src="{{ '/images/donuts.png' | url }}"
+          class="img-fluid"
+          alt="a screenshot of the OpenStreetMap editing screen with a donut emoji and a coffee emoji.">
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="my-5">
+    <strong>View for:</strong>
+    <div class="dropdown">
+      <a
+        class="btn btn-outline-secondary dropdown-toggle"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Language
+      </a>
+
+      <ul class="dropdown-menu dropdown-menu-start text-start">
+
+        {% assign links = page.url | locale_links %}
+        {%- for link in links %}
+          <li>
+            <a
+              class="dropdown-item"
+              href="{{ link.url }}"
+              lang="{{ link.lang }}"
+              hreflang="{{ link.lang }}">{{ link.label }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+  -->
+
+  <table class="table schedule">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 10%;">{{ source.schedule.scheduleLabelUS }}</th>
+        <th scope="col" style="width: 10%;">{{ source.schedule.scheduleLabelGermany }}</th>
+        <th scope="col" style="width: 10%;">{{ source.schedule.scheduleLabelJapan }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-secondary">
+        <td class="day-start">
+          {{source.schedule.USDay1}}
+        </td>
+        <td class="day-start">
+          {{source.schedule.notUSDay1}}
+        </td>
+        <td class="day-start">
+          {{source.schedule.notUSDay1}}
+        </td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event1TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event1TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event1TimeJapan}}</td>
+        <td class="">{{source.schedule.event1Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event2TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event2TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event2TimeJapan}}</td>
+        <td class="">{{source.schedule.event2Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event3TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event3TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event3TimeJapan}}</td>
+        <td class="">{{source.schedule.event3Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event4TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event4TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event4TimeJapan}}</td>
+        <td class="">{{source.schedule.event4Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event5TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event5TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event5TimeJapan}}</td>
+        <td class="">{{source.schedule.event5Description}}</td>
+      </tr>
+      <tr>
+        <td class="table-secondary day-start">
+          {{source.schedule.USDay2}}
+        </td>
+        <td class="day-time"></td>
+        <td class="day-time"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event6TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event6TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event6TimeJapan}}</td>
+        <td class="">{{source.schedule.event6Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event7TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event7TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event7TimeJapan}}</td>
+        <td class="">{{source.schedule.event7Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event8TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event8TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event8TimeJapan}}</td>
+        <td class="">{{source.schedule.event8Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event9TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event9TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event9TimeJapan}}</td>
+        <td class="">{{source.schedule.event9Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time"></td>
+        <td class="table-secondary day-start">{{source.schedule.notUSDay2}}</td>
+        <td class="table-secondary day-start">{{source.schedule.notUSDay2}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event10TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event10TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event10TimeJapan}}</td>
+        <td class="">{{source.schedule.event10Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event11TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event11TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event11TimeJapan}}</td>
+        <td class="">{{source.schedule.event11Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event12TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event12TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event12TimeJapan}}</td>
+        <td class="">{{source.schedule.event12Description}}</td>
+      </tr>
+      <tr>
+        <td class="table-secondary day-start">{{source.schedule.USDay3}}</td>
+        <td class="table-secondary day-start">{{source.schedule.notUSDay3}}</td>
+        <td class="table-secondary day-start">{{source.schedule.notUSDay3}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event13TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event13TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event13TimeJapan}}</td>
+        <td class="">{{source.schedule.event13Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event14TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event14TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event14TimeJapan}}</td>
+        <td class="">{{source.schedule.event14Description}}</td>
+      </tr>
+      <tr>
+        <td class="day-time">{{source.schedule.event15TimeUS}}</td>
+        <td class="day-time">{{source.schedule.event15TimeGermany}}</td>
+        <td class="day-time">{{source.schedule.event15TimeJapan}}</td>
+        <td class="">{{source.schedule.event15Description}}</td>
+      </tr>
+      <tr>
+        <td class="table-secondary day-start">{{source.schedule.USDay4}}</td>
+        <td class="day-time"></td>
+        <td class="table-secondary day-start">{{source.schedule.notUSDay4}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="day-end">{{source.schedule.event16TimeUS}}</td>
+        <td class="day-end">{{source.schedule.event16TimeGermany}}</td>
+        <td class="day-end">{{source.schedule.event16TimeJapan}}</td>
+        <td class="">{{source.schedule.event16Description}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<!--
+  <h2 class="display-5">{{ source.schedule.day1 }}</h2>
+  <h3>{{ source.schedule.date1 }}</h3>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day1EventTime1 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day1EventDescription1 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day1EventTime2 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day1EventDescription2 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day1EventTime3 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day1EventDescription3 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day1EventTime4 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day1EventDescription4 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day1EventTime5 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day1EventDescription5 }}
+    </div>
+  </div>
+
+  <h2 class="display-5 mt-5">{{ source.schedule.day2 }}</h2>
+  <h3>{{ source.schedule.date2 }}</h3>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day2EventTime1 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day2EventDescription1 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day2EventTime2 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day2EventDescription2 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day2EventTime3 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day2EventDescription3 }}
+    </div>
+  </div>
+
+  <h2 class="display-5 mt-5">{{ source.schedule.day3 }}</h2>
+  <h3>{{ source.schedule.date3 }}</h3>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day3EventTime1 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day3EventDescription1 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day3EventTime2 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day3EventDescription2 }}
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-2 text-end">
+      {{ source.schedule.day3EventTime3 }}
+    </div>
+    <div class="col">
+      {{ source.schedule.day3EventDescription3 }}
+    </div>
+  </div>
+</div>
+-->

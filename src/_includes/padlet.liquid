@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% if page.lang == 'en' %}
+  {% assign source = en_content %}
+{% elsif page.lang == 'ja' %}
+  {% assign source = ja_content %}
+{% endif %}
+
+<div class="container">
+    <h1>Padlet</h1>
+</div>

@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+{% if page.lang == 'en' %}
+  {% assign source = en_content %}
+{% elsif page.lang == 'ja' %}
+  {% assign source = ja_content %}
+{% endif %}
+
+<div id="hex-1" class="hexagon-large hexagon--light-orange hex-1">&#x2B22;</div>
+<div id="hex-2" class="hexagon-large hexagon--orange hex-2">&#x2B22;</div>
+<div id="hex-3" class="hexagon-large hexagon--light-gray hex-3">&#x2B22;</div>
+
+<div id="hex-group-1">
+  <div id="hex-4" class="hexagon-small hexagon--orange hex-group-1a">&#x2B22;</div>
+  <div id="hex-5" class="hexagon-small hexagon--orange hex-group-1b">&#x2B22;</div>
+</div>
+
+<div class="container">
+
+<section id="header">
+  <div id="header--title">
+    <div>
+      <div id="header--title__year">7th</div>
+      </div>
+    <div id="header--title__text">Annual<br>Humanitarian<br>Mapathon<br></div>
+  </div>
+  <div id="header--date">
+    April 23-25, 2024
+  </div>
+</section>
+
+
+
+<section id="description">
+  <p>Join fellow mappers from around the world to map the world!</p>
+  <p>Learn about OpenStreetMap. Join the UN Crisis Map Challenge. Share with other mappers from around the world. Beginners are welcome!</p>
+</section>
+
+<section id="days">
+  <div class="day">
+    <div class="day__number">Day 1</div>
+    <div class="day__title">Humanitarian Mapping</div>
+    <div class="day__description">
+      <p>Learn about OpenStreetMap and how to map for humanitarian causes.</p>
+    </div>
+    <div>
+      <button class="btn btn-yellow btn-details" type="button" id="btn-day-1">More details</button>
+    </div>
+  </div>
+  <div class="day">
+    <div class="day__number">Day 2</div>
+    <div class="day__title">UN Crisis Map Challenge</div>
+    <div class="day__description">
+      <p>Join the UN Crisis Map Challenge and create a map that tells a story.</p>
+    </div>
+    <div>
+      <button class="btn btn-yellow btn-details" type="button" id="btn-day-2">More details</button>
+    </div>    
+  </div>
+  <div class="day">
+    <div class="day__number">Day 3</div>
+    <div class="day__title">International Meetup</div>
+    <div class="day__description">
+      <p>Join fellow mappers from around the world to share your work and learn from others.</p>
+    </div>
+    <div>
+      <button class="btn btn-yellow btn-details" type="button" id="btn-day-2">More details</button>
+    </div>
+  </div>
+</section>
+
+<section id="registration">
+  <button class="btn btn-orange btn-lg" type="button" id="btn-register">Register</button>
+</section>
+</div>
