@@ -9,13 +9,11 @@
     "data": "npm run get-data-2024 && node process.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf docs",
-    "build": "npx @11ty/eleventy",
-    "clean:build": "npm run clean && npm run build",
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=* npx @11ty/eleventy --serve",
-    "prod:build": "NODE_ENV=prod npm run clean && npm run data && npm run build",
-    "preprod:build": "NODE_ENV=preprod npm run clean && npm run data && npm run build",
-    "start": "npm run clean && npm run data && npm run serve"
+    "preprod:build": "npx @11ty/eleventy --pathprefix=website-2024",
+    "prod:build": "npx @11ty/eleventy",
+    "start": "npm run clean && npm run data && npm run preprod:build"
   },
   "repository": {
     "type": "git",
@@ -29,6 +27,6 @@
   },
   "homepage": "https://github.com/la-mapathon/website#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.14"
+    "@11ty/eleventy": "^2.0.1"
   }
 }
