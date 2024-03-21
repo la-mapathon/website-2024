@@ -132,7 +132,6 @@
     background-color: var(--yellow);
 }
 
-
 #description {
     margin-top: 2rem;
     font-size: 1.5rem;
@@ -227,6 +226,19 @@
     background-color: var(--light-orange);
     border-color: var(--orange);
 }
+
+.schedule__table {
+    width: 100%;
+    margin: 1rem 0;
+    border: var(--light-gray) solid 2px;
+    border-collapse: collapse;
+}
+
+.schedule__table td, .schedule__table th {
+    padding: 1rem 0.25rem;
+    border: var(--light-gray) solid 2px;
+}
+
 
 /* Create a @media breakpoint for tablet and larger sized screens */
 @media (min-width: 768px) {
