@@ -20,7 +20,7 @@
       <div class="navbar-nav ms-auto">
         <ul class="navbar-nav text-end">
           <li class="nav-item px-lg-2">
-            <a class="nav-link" href="{{ '/' | url: page.lang }}">{{ source.nav.navIndex }}</a>
+            <a class="nav-link" href="{{ '/' | htmlBaseUrl: page.lang  }}">{{ source.nav.navIndex }}</a>
           </li>
           <li class="nav-item dropdown px-lg-2">
             <a
@@ -30,7 +30,7 @@
               data-bs-toggle="dropdown">Schedule</a>
             <ul class="dropdown-menu dropdown-menu-end text-end">
               <li>
-                <a class="nav-link" href="{{ '/schedule-day-1/' | url: page.lang }}">Day 1</a>
+                <a class="nav-link" href="{{ '/schedule-day-1/' | htmlBaseUrl: page.lang  }}">Day 1</a>
               </li>
               <li>
                 <a class="nav-link" href="{{ '/schedule-day-2/' | url: page.lang }}">Day 2</a>

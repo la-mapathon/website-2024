@@ -11,7 +11,7 @@
     "clean": "rm -rf docs",
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=* npx @11ty/eleventy --serve",
-    "preprod:build": "npx @11ty/eleventy --pathprefix=website-2024",
+    "preprod:build": "npx @11ty/eleventy --pathprefix=website-2024 --serve",
     "prod:build": "npx @11ty/eleventy",
     "start": "npm run clean && npm run data && npm run preprod:build"
   },
