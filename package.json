@@ -13,6 +13,8 @@
     "clean:build": "npm run clean && npm run build",
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=* npx @11ty/eleventy --serve",
+    "prod:build": "NODE_ENV=prod npm run clean && npm run data && npm run build",
+    "preprod:build": "NODE_ENV=preprod npm run clean && npm run data && npm run build",
     "start": "npm run clean && npm run data && npm run serve"
   },
   "repository": {
