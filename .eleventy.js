@@ -6,12 +6,15 @@ module.exports = function(eleventyConfig) {
 	switch (env) {
 		case "prod":
 			envPathPrefix = "";
+			console.log("Production build");
 			break;
 		case "preprod":
 			envPathPrefix = "/website-2024/";
+			console.log("Pre-production build");
 			break;
 		default:
 			envPathPrefix = "";
+			console.log("Development build");
 			break;
 	}
 
