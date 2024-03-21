@@ -1,20 +1,21 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
-const env = process.env.NODE_ENV
 
 module.exports = function(eleventyConfig) {
+	let env = process.env.NODE_ENV
 	let envPathPrefix = "";
+
 	switch (env) {
 		case "prod":
 			envPathPrefix = "";
-			console.log("Production build");
+			console.log("Production build: " + env);
 			break;
 		case "preprod":
 			envPathPrefix = "/website-2024/";
-			console.log("Pre-production build");
+			console.log("Pre-production build" + env);
 			break;
 		default:
 			envPathPrefix = "";
-			console.log("Development build");
+			console.log("Development build" + env);
 			break;
 	}
 
