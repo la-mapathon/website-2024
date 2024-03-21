@@ -1,21 +1,19 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const env = process.env.NODE_ENV
 
-let envPathPrefix = "";
-
-switch (env) {
-	case "prod":
-		envPathPrefix = "";
-		break;
-	case "preprod":
-		envPathPrefix = "/website-2024/";
-		break;
-	default:
-		envPathPrefix = "";
-		break;
-}
-
 module.exports = function(eleventyConfig) {
+	let envPathPrefix = "";
+	switch (env) {
+		case "prod":
+			envPathPrefix = "";
+			break;
+		case "preprod":
+			envPathPrefix = "/website-2024/";
+			break;
+		default:
+			envPathPrefix = "";
+			break;
+	}
 
 	eleventyConfig.addPassthroughCopy("src/images");
 	eleventyConfig.addPassthroughCopy("src/css");
