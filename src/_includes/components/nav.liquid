@@ -33,48 +33,48 @@
                 <a class="nav-link" href="{{ '/schedule-day-1/' | htmlBaseUrl: page.lang  }}">Day 1</a>
               </li>
               <li>
-                <a class="nav-link" href="{{ '/schedule-day-2/' | url: page.lang }}">Day 2</a>
+                <a class="nav-link" href="{{ '/schedule-day-2/' | htmlBaseUrl: page.lang }}">Day 2</a>
               </li>
               <li>
-                <a class="nav-link" href="{{ '/schedule-day-3/' | url: page.lang }}">Day 3</a>
+                <a class="nav-link" href="{{ '/schedule-day-3/' | htmlBaseUrl: page.lang }}">Day 3</a>
               </li>
             </ul>
           </li>
           <li class="nav-item dropdown px-lg-2">
             <a
               class="nav-link dropdown-toggle"
-              href="{{ '/resources/' | url: page.lang }}"
+              href="#"
               role="button"
               data-bs-toggle="dropdown">Resources</a>
             <ul class="dropdown-menu dropdown-menu-end text-end">
               <li>
-                <a class="nav-link" href="{{ '/resources/' | url: page.lang }}">Tutorials</a>
+                <a class="nav-link" href="{{ '/resources/' | htmlBaseUrl: page.lang }}">Tutorials</a>
               </li>
               <li>
-                <a class="nav-link" href="{{ '/padlet/' | url: page.lang }}">Padlet</a>
+                <a class="nav-link" href="{{ '/padlet/' | htmlBaseUrl: page.lang }}">Padlet</a>
               </li>
             </ul>
           </li>
           <li class="nav-item dropdown px-lg-2">
             <a
               class="nav-link dropdown-toggle"
-              href="{{ '/team/' | url: page.lang }}"
+              href="#"
               role="button"
               data-bs-toggle="dropdown">About</a>
             <ul class="dropdown-menu dropdown-menu-end text-end">
               <li>
-                <a class="dropdown-item" href="{{ '/team/' | url: page.lang }}">
+                <a class="dropdown-item" href="{{ '/team/' | htmlBaseUrl: page.lang }}">
                   Meet the Team
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{ '/team/' | url: page.lang }}#section-2">
+                <a class="dropdown-item" href="{{ '/guests/' | htmlBaseUrl: page.lang }}">
                   Meet the Guests
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="{{ '/history/' | url: page.lang }}">
-                  History
+                <a class="dropdown-item" href="{{ '/history/' | htmlBaseUrl: page.lang }}">
+                  Our History
                 </a>
               </li>
             </ul>
