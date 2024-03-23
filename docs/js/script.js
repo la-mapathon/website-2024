@@ -415,7 +415,7 @@ function populateTimezoneSelector(){
     mapathonTimezoneSet.forEach((timezone) => {
       let option = document.createElement("option");
       option.value = timezone.tzCode;
-      option.selected = timezone.label.includes('Pacific');
+      option.selected = timezone.label.includes('Los Angeles');
 
       option.appendChild(document.createTextNode(timezone.label));
       select.appendChild(option);
