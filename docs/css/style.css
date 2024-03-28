@@ -94,6 +94,19 @@
     top: 800px;
 }
 
+#hex-group-2 {
+    position: absolute;
+    z-index: -1000;
+    left: 50px;
+    top: 200px;
+}
+
+.hex-group-2b {
+    position: relative;
+    top: -90px;
+    left: -30px;
+}
+
 .hex-group-1b {
     position: relative;
     top: -90px;
@@ -102,6 +115,9 @@
 
 section {
     margin: 2rem 0;
+}
+
+h3 {
 }
 
 #header {
@@ -236,6 +252,7 @@ section {
     margin: 1rem 0;
     border: var(--light-gray) solid 2px;
     border-collapse: collapse;
+    background-color: #ffffffaa;
 }
 
 .schedule__table td, .schedule__table th {
