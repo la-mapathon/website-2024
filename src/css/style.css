@@ -125,7 +125,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-#header--title {
+.header--title {
     display: flex;
     flex-direction: row;
     align-items: top;
@@ -133,20 +133,27 @@ h3 {
     gap: 1rem;
 }
 
-#header--title__year{
+.header--yellow-bg {
+    background-color: var(--yellow);
+    font-size: 3rem;
+    padding: 0.25rem;
+}
+
+.header--title__year{
     font-size: 4rem;
     padding: 0.25rem;
     background-color: var(--yellow);
 }
 
-#header--title__text{
+.header--title__text{
     font-size: 2.5rem;
     line-height: 3rem;
+    letter-spacing: 0.05rem;
 }
 
-#header--date {
+.header--date {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     display: inline-block;
     background-color: var(--yellow);

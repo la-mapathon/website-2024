@@ -22,7 +22,7 @@
           <li class="nav-item px-lg-2">
             <a class="nav-link" href="{{ '/' | htmlBaseUrl: page.lang  }}">{{ source.nav.navIndex }}</a>
           </li>
-          <li class="nav-item dropdown px-lg-2">
+          {% comment %} <li class="nav-item dropdown px-lg-2">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -39,21 +39,9 @@
                 <a class="nav-link" href="{{ '/schedule-day-3/' | htmlBaseUrl: page.lang }}">Day 3</a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown px-lg-2">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown">Resources</a>
-            <ul class="dropdown-menu dropdown-menu-end text-end">
-              <li>
-                <a class="nav-link" href="{{ '/resources/' | htmlBaseUrl: page.lang }}">Tutorials</a>
-              </li>
-              <li>
-                <a class="nav-link" href="{{ '/padlet/' | htmlBaseUrl: page.lang }}">Padlet</a>
-              </li>
-            </ul>
+          </li> {% endcomment %}
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="{{ '/resources/' | htmlBaseUrl: page.lang  }}">Resources</a>
           </li>
           <li class="nav-item dropdown px-lg-2">
             <a
@@ -61,25 +49,19 @@
               href="#"
               role="button"
               data-bs-toggle="dropdown">About</a>
-            <ul class="dropdown-menu dropdown-menu-end text-end">
-              <li>
+            <div class="dropdown-menu dropdown-menu-end text-end">
                 <a class="dropdown-item" href="{{ '/team/' | htmlBaseUrl: page.lang }}">
                   Meet the Team
                 </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="{{ '/guests/' | htmlBaseUrl: page.lang }}">
+                {% comment %} <a class="dropdown-item" href="{{ '/guests/' | htmlBaseUrl: page.lang }}">
                   Meet the Guests
-                </a>
-              </li>
-              <li>
+                </a> {% endcomment %}
                 <a class="dropdown-item" href="{{ '/history/' | htmlBaseUrl: page.lang }}">
                   Our History
                 </a>
-              </li>
-            </ul>
+              </div>
           </li>
-          <li class="nav-item px-lg-2">
+          {% comment %} <li class="nav-item px-lg-2">
             <div class="dropdown">
               <a
                 class="btn btn-secondary dropdown-toggle"
@@ -104,7 +86,7 @@
                 {%- endfor -%}
               </ul>
             </div>
-          </li>
+          </li> {% endcomment %}
         </ul>
       </div>
     </div>
