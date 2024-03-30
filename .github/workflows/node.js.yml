@@ -27,7 +27,7 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: Clean, Download Data, and Build Site
-      run: npm run preprod:build
+      run: npm run prod:build
     - name: Check file existence
       id: check_files
       uses: andstor/file-existence-action@v1
