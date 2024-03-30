@@ -113,11 +113,21 @@
     left: 30px;
 }
 
+.mapathon-bear {
+    position: absolute;
+    z-index: -1000;
+    right: 0;
+    top: 50px;
+}
+
 section {
     margin: 2rem 0;
 }
 
-h3 {
+h1 {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--yellow);
 }
 
 #header {
@@ -127,7 +137,7 @@ h3 {
 
 .header--title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: top;
     margin-bottom: 1 rem;
     gap: 1rem;
@@ -149,6 +159,8 @@ h3 {
     font-size: 2.5rem;
     line-height: 3rem;
     letter-spacing: 0.05rem;
+    padding: 0.25rem;
+    background-color: #ffffff;
 }
 
 .header--date {
@@ -165,7 +177,7 @@ h3 {
     line-height: 2rem;
     text-align: center;
     padding: 1rem;
-    background-color: #ffffffaa;
+    background-color: #eeeeeeaa;
 }
 
 #days {
@@ -270,6 +282,10 @@ h3 {
 
 /* Create a @media breakpoint for tablet and larger sized screens */
 @media (min-width: 768px) {
+    .header--title {
+        flex-direction: row;
+    }
+
     #days {
         flex-direction: row;
         gap: 1rem;
