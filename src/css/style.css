@@ -47,9 +47,20 @@
     initial-value: #f4e1cf;
 }
 
-.hexagon-large {
+body {
+    overflow-x: hidden;
+}
+
+.hexagon-large-group {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
     z-index: -1000;
-    font-size: 500px;
+}
+
+.hexagon-large {
+    font-size: 400px;
 }
 
 .hexagon-small {
@@ -72,19 +83,19 @@
 #hex-1 {
     position: absolute;
     left: -120px;
-    top: 0px;
+    top: -50px;
 }
 
 #hex-2 {
     position: absolute;
-    left: 200px;
-    top: 0px;
+    left: 10px;
+    top: -290px;
 }
 
 #hex-3 {
     position: absolute;
-    left: 40px;
-    top: -290px;
+    left: 140px;
+    top: -50px;
 }
 
 #hex-group-1 {
@@ -233,7 +244,7 @@ h1 {
 #btn-register {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 40%;
+    width: 100%;
 }
 
 .yellow-bg {
@@ -284,6 +295,10 @@ h1 {
 @media (min-width: 768px) {
     .header--title {
         flex-direction: row;
+    }
+
+    #btn-register {
+        width: 40%;
     }
 
     #days {
