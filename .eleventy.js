@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/images");
 	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/js");
+	eleventyConfig.addPassthroughCopy("favicon.ico");
 
 	eleventyConfig.addDataExtension("csv", (contents) => {
 		const records = parse(contents, {
