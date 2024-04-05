@@ -313,7 +313,9 @@ h1 {
     margin: 1rem;
 }
 
-
+.locale {
+    margin: 2rem 0;
+}
 
 /* Create a @media breakpoint for tablet and larger sized screens */
 @media (min-width: 768px) {
