@@ -8,10 +8,10 @@ const fullTimezoneSet = [
   { offset: '-09:30', label: '(GMT-09:30) Marquesas', tzCode: 'Pacific/Marquesas' },
   { offset: '-09:00', label: '(GMT-09:00) Alaska Time', tzCode: 'America/Anchorage' },
   { offset: '-09:00', label: '(GMT-09:00) Gambier', tzCode: 'Pacific/Gambier' },
-  { offset: '-08:00', label: '(GMT-08:00) Pacific Time', tzCode: 'America/Los_Angeles' },
-  { offset: '-08:00', label: '(GMT-08:00) Pacific Time - Tijuana', tzCode: 'America/Tijuana' },
-  { offset: '-08:00', label: '(GMT-08:00) Pacific Time - Vancouver', tzCode: 'America/Vancouver' },
-  { offset: '-08:00', label: '(GMT-08:00) Pacific Time - Whitehorse', tzCode: 'America/Whitehorse' },
+  { offset: '-08:00', label: '(GMT-07:00) Pacific Time', tzCode: 'America/Los_Angeles' },
+  { offset: '-08:00', label: '(GMT-07:00) Pacific Time - Tijuana', tzCode: 'America/Tijuana' },
+  { offset: '-08:00', label: '(GMT-07:00) Pacific Time - Vancouver', tzCode: 'America/Vancouver' },
+  { offset: '-08:00', label: '(GMT-07:00) Pacific Time - Whitehorse', tzCode: 'America/Whitehorse' },
   { offset: '-08:00', label: '(GMT-08:00) Pitcairn', tzCode: 'Pacific/Pitcairn' },
   { offset: '-07:00', label: '(GMT-07:00) Mountain Time', tzCode: 'America/Denver' },
   { offset: '-07:00', label: '(GMT-07:00) Mountain Time - Arizona', tzCode: 'America/Phoenix' },
@@ -373,11 +373,11 @@ const tzInts = [
 ]
 
 const mapathonTimezoneSet = [
-  { offset: '-10:00', label: '(GMT-10:00) Hawaii', tzCode: 'Pacific/Honolulu' },
-  { offset: '-08:00', label: '(GMT-08:00) Los Angeles', tzCode: 'America/Los_Angeles' },
-  { offset: '-06:00', label: '(GMT-06:00) Mexico City', tzCode: 'America/Mexico_City' },
-  { offset: '+08:00', label: '(GMT+08:00) Manila', tzCode: 'Asia/Manila' },
-  { offset: '+09:00', label: '(GMT+09:00) Tokyo', tzCode: 'Asia/Tokyo' },
+  { offset: '-10:00', label: '(GMT-10) Hawaii', tzCode: 'Pacific/Honolulu' },
+  { offset: '-07:00', label: '(GMT-7) Los Angeles', tzCode: 'America/Los_Angeles' },
+  { offset: '-06:00', label: '(GMT-6) Mexico City', tzCode: 'America/Mexico_City' },
+  { offset: '+08:00', label: '(GMT+8) Manila', tzCode: 'Asia/Manila' },
+  { offset: '+09:00', label: '(GMT+9) Tokyo', tzCode: 'Asia/Tokyo' },
 ]; 
 
 // on dom load
