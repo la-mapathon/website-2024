@@ -141,6 +141,17 @@ h1 {
     background-color: var(--yellow);
 }
 
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 #header {
     margin-top: 2rem;
     margin-bottom: 1rem;
